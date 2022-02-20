@@ -1,0 +1,1 @@
+This folder is about Sorting and Searching algorithms
