@@ -1,5 +1,7 @@
 # Data-Structures-and-Algorithms
-DSA PTIT
+These Sources are about DSA of PTIT - NMS - Group 19
+
+
 https://luyencode.net/ 
 
 https://code.ptit.edu.vn/
