@@ -1,5 +1,5 @@
 # Data-Structures-and-Algorithms
-These Sources are about DSA of PTIT - NMS - Group 19
+These Sources are about DSA of PTIT - Teacher: Nguyen Manh Son - Group 19
 
 
 https://luyencode.net/ 
