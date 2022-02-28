@@ -1,0 +1,2305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://code.ptit.edu.vn/student/question -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <link rel="shortcut icon" href="https://code.ptit.edu.vn/favicon.png">
+    <meta name="csrf-token" content="aq4etZAlPbYso5svtBpQrldWqmNFrkHsH20tEZZZ">
+    <title>Problems</title>
+    <!-- Scripts -->
+    <script type="text/javascript" async="" src="./SapXepTimKiem_files/tracker.min.js.tải xuống"></script><script src="./SapXepTimKiem_files/app.js.tải xuống"></script>
+        <!-- Styles -->
+    <link href="./SapXepTimKiem_files/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="./SapXepTimKiem_files/style.css">
+    <link rel="stylesheet" href="./SapXepTimKiem_files/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./SapXepTimKiem_files/jquery.datetimepicker.css">
+
+    <!-- Default Theme (Core) -->
+    <link rel="stylesheet" href="./SapXepTimKiem_files/default.css">
+    <!-- Default Theme (Date Picker) -->
+    <link rel="stylesheet" href="./SapXepTimKiem_files/default.date.css">
+    <!-- Default Theme (Time Picker If Needed)-->
+    <link rel="stylesheet" href="./SapXepTimKiem_files/default.time.css">
+
+    <!-- For RTL Layout -->
+    <link rel="stylesheet" href="./SapXepTimKiem_files/rtl.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <!-- NAVIGATION BAR  -->
+    <div class="nav">
+        <div class="row">
+            <div class="menu__icon">
+                <a href="javascript:void(0);" onclick="clickMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="col-6 menu">
+                <div id="nav__menu" class="nav__menu">
+                    <div class="nav__menu__item" id="nav__logo">
+                        <a class="nav__menu__item__logo" href="https://code.ptit.edu.vn/">
+                            <img src="./SapXepTimKiem_files/logo_ptit.png" alt="">
+                        </a>
+                    </div>
+                    <div class="nav__menu__item homepage">
+                        <a href="https://code.ptit.edu.vn/">
+                            Home
+                        </a>
+                    </div>
+                                            <div class="nav__menu__item">
+                            <a href="https://code.ptit.edu.vn/student/question">
+                                Problems
+                            </a>
+                        </div>
+                        <div class="nav__menu__item">
+                            <a href="https://code.ptit.edu.vn/student/solution">
+                                Status
+                            </a>
+                        </div>
+                        <div class="nav__menu__item">
+                            <a href="https://code.ptit.edu.vn/student/history">
+                                History
+                            </a>
+                        </div>
+                        <div class="nav__menu__item">
+                            <a href="https://code.ptit.edu.vn/student/ranking">
+                                Ranking
+                            </a>
+                        </div>
+                        <div class="nav__menu__item">
+                            <a href="https://code.ptit.edu.vn/guide">
+                                Guide
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+            <div class="col-6">
+                <div id="nav__profile" class="nav__profile">
+                    <div class="nav__profile__img nav__lang">
+                        <img onclick="toggleMenu(&#39;lang__dropdown&#39;)" src="./SapXepTimKiem_files/Eng.png" alt="">
+                        <div class="nav__profile__menu lang__dropdown disappear">
+                            <ul>
+                                <li onclick="location.href=&#39;https://code.ptit.edu.vn/change-language/vi&#39;">
+                                    <img src="./SapXepTimKiem_files/VN.png" alt=""> Tiếng Việt
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                                        <div class="nav__profile__img nav__profile__user">
+
+                                                <img class="nav__profile__avatar" onclick="toggleMenu(&#39;profile__dropdown&#39;)" src="./SapXepTimKiem_files/avt.png" alt="">
+                        <div class="nav__profile__menu profile__dropdown disappear">
+                            <ul>
+                                <li>
+                                    <p class="nav__profile__menu__name">Nguyễn Thu Hằng</p>
+                                    <p class="nav__profile__menu__code">B20DCPT077</p>
+                                </li>
+                                <li><a href="https://code.ptit.edu.vn/user/profile">Profile</a></li>
+                                                                                                <li><a href="https://code.ptit.edu.vn/student/courses">Courses</a></li>
+                                                                                                <li><a href="https://code.ptit.edu.vn/logout" onclick="event.preventDefault();
+                                             document.getElementById(&#39;logout-form&#39;).submit();">
+                                    Logout
+                                </a>
+                                    <form id="logout-form" action="https://code.ptit.edu.vn/logout" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="aq4etZAlPbYso5svtBpQrldWqmNFrkHsH20tEZZZ">                                    </form>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <button onclick="toggleMenu(&#39;profile__dropdown&#39;)">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+        <div class="wrapper">
+        <div class="main--fluid">
+                <div class="status">
+        <div class="ques__nav__top">
+            <span class="ques__nav__title">Problems</span>
+            <form action="https://code.ptit.edu.vn/student/question" class="ques__nav__form">
+                <input type="text" name="s" id="" placeholder="Search code, title">
+                <input type="submit" value="/">
+                <button type="submit">
+                    <svg id="Group_10991" data-name="Group 10991" xmlns="http://www.w3.org/2000/svg" width="24.004" height="24.004" viewBox="0 0 24.004 24.004">
+                        <g id="Rectangle_325" data-name="Rectangle 325" fill="none" stroke="#bb2019" stroke-width="1.5">
+                            <rect width="24.004" height="24.004" rx="3" stroke="none"></rect>
+                            <rect x="0.75" y="0.75" width="22.504" height="22.504" rx="2.25" fill="none"></rect>
+                        </g>
+                        <line id="Line_72" data-name="Line 72" x1="11" y2="15" transform="translate(6.502 4.502)" fill="none" stroke="#bb2019" stroke-width="1.5"></line>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+                    <div class="ques__nav__bottom">
+                <div class="custom__nav__select">
+                    <div class="custom-select select__subject">
+                        <select id="course" name="course" class="form-control" onchange="(window.location = &#39;?course=&#39; + this.options[this.selectedIndex].value);">
+                                                                                                <option disabled="">Học kỳ 2 năm học 2021-2022</option>
+                                                                <option selected="" value="260">Cấu trúc dữ liệu và giải thuật - Nhóm 02</option>
+                                                    </select>
+                    <div class="select-selected">Cấu trúc dữ liệu và giải thuật - Nh...</div><div class="select-items select-hide"><div>Học kỳ 2 năm học 2021-2022</div><div>Cấu trúc dữ liệu và giải thuật - Nhóm 02</div></div></div>
+                </div>
+            </div>
+                                    <div class="ques__table__wrapper">
+                                <table class="ques__table">
+                    <thead>
+                    <tr class="ques__table__head">
+                                                <th></th>
+                                                <th class="text--middle">No</th>
+                        <th>
+                            <a href="https://code.ptit.edu.vn/student/question?order=desc&amp;by=code"><i class="fa fa-fw fa-sort"></i></a>Code</th>
+                        <th>
+                            <a href="https://code.ptit.edu.vn/student/question?order=desc&amp;by=name"><i class="fa fa-fw fa-sort"></i></a>Title</th>
+                        <th>
+                            Group
+                        </th>
+                        <th>
+                            <span>Sub group</span>
+                            <div class="filter">
+                                <div class=" filter__dropdown disappear">
+                                    <form action="https://code.ptit.edu.vn/student/question" method="GET">
+                                    <ul>
+                                        <li>
+                                            <div class="checkbox--block">
+
+                                                <label class="cb__label" for="noti__checkbox">Filter <i class="fa fa-filter" aria-hidden="true"></i></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="0" value="0" class="checkbox--red">
+                                                <label class="cb__label" for="0">All</label>
+                                            </div>
+                                        </li>
+                                                                                                                        <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="16" value="16" class="checkbox--red">
+                                                <label class="cb__label" for="16">Sinh kế tiếp</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="17" value="17" class="checkbox--red">
+                                                <label class="cb__label" for="17">Quay lui - Nhánh cận</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="18" value="18" class="checkbox--red">
+                                                <label class="cb__label" for="18">Giải thuật tham lam</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="19" value="19" class="checkbox--red">
+                                                <label class="cb__label" for="19">Chia và trị</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="20" value="20" class="checkbox--red">
+                                                <label class="cb__label" for="20">Quy hoạch động</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="21" value="21" checked="checked" class="checkbox--red">
+                                                <label class="cb__label" for="21">Sắp xếp - Tìm kiếm</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="22" value="22" class="checkbox--red">
+                                                <label class="cb__label" for="22">Ngăn xếp</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="23" value="23" class="checkbox--red">
+                                                <label class="cb__label" for="23">Hàng đợi</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="24" value="24" class="checkbox--red">
+                                                <label class="cb__label" for="24">Duyệt đồ thị</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="25" value="25" class="checkbox--red">
+                                                <label class="cb__label" for="25">Đồ thị nâng cao</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="26" value="26" class="checkbox--red">
+                                                <label class="cb__label" for="26">Cây nhị phân</label>
+                                            </div>
+                                        </li>
+                                                                                                                                                                <li>
+                                            <div class="checkbox--block">
+                                                <input type="checkbox" name="sub_group[]" id="54" value="54" class="checkbox--red">
+                                                <label class="cb__label" for="54">Danh sách liên kết đơn</label>
+                                            </div>
+                                        </li>
+                                                                                                                    </ul>
+                                    <ul>
+                                        <li class="filter__dropdown__btn__wrapper">
+                                            <button type="submit" class="filter__dropdown__btn">
+                                                Filter
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    </form>
+                                </div>
+                                <button onclick="$(&#39;.filter__dropdown&#39;).toggleClass(&#39;disappear&#39;).toggleClass(&#39;appear&#39;)">
+                                    <i class="fa fa-filter" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </th>
+                        <th class="text--middle">
+                            <a href="https://code.ptit.edu.vn/student/question?order=desc&amp;by=level"><i class="fa fa-fw fa-sort-up"></i></a>Level
+                        </th>
+                        <th>
+                            User AC
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">1</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/CTDL_005">CTDL_005</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/CTDL_005">XÓA DỮ LIỆU TRONG DSLK ĐƠN</a>
+                            </td>
+                            <td>CÁC CẤU TRÚC DỮ LIỆU CƠ BẢN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/CTDL_005/top">84</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">2</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/CTDL_006">CTDL_006</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/CTDL_006">LỌC DỮ LIỆU TRÙNG TRONG DSLK ĐƠN</a>
+                            </td>
+                            <td>CÁC CẤU TRÚC DỮ LIỆU CƠ BẢN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/CTDL_006/top">69</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">3</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06001">DSA06001</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06001">SẮP XẾP XEN KẼ</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06001/top">879</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">4</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06002">DSA06002</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06002">SẮP XẾP THEO GIÁ TRỊ TUYỆT ĐỐI</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06002/top">721</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">5</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06003">DSA06003</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06003">ĐỔI CHỖ ÍT NHẤT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06003/top">397</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">6</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06004">DSA06004</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06004">HỢP VÀ GIAO CỦA HAI DÃY SỐ 1</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06004/top">698</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">7</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06005">DSA06005</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06005">HỢP VÀ GIAO CỦA HAI DÃY SỐ 2</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06005/top">654</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">8</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06006">DSA06006</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06006">SẮP XẾP [0 1 2]</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06006/top">863</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">9</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06007">DSA06007</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06007">SẮP XẾP DÃY CON LIÊN TỤC</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06007/top">586</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">10</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06008">DSA06008</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06008">ĐẾM CẶP</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06008/top">188</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">11</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06009">DSA06009</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06009">CẶP SỐ TỔNG BẰNG K</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06009/top">741</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">12</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06010">DSA06010</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06010">SẮP XẾP CHỮ SỐ</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06010/top">664</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">13</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06011">DSA06011</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06011">TỔNG GẦN 0 NHẤT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06011/top">610</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">14</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06012">DSA06012</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06012">PHẦN TỬ LỚN NHẤT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06012/top">778</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">15</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06013">DSA06013</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06013">SỐ LẦN XUẤT HIỆN</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06013/top">768</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">16</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06014">DSA06014</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06014">TỔNG CẶP SỐ NGUYÊN TỐ</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06014/top">555</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">17</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06015">DSA06015</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06015">MERGE SORT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06015/top">549</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">18</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06016">DSA06016</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06016">TÍCH LỚN NHẤT - NHỎ NHẤT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06016/top">636</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">19</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06017">DSA06017</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06017">TRỘN HAI DÃY</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06017/top">675</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">20</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06018">DSA06018</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06018">BỔ SUNG PHẦN TỬ</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06018/top">608</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">21</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06019">DSA06019</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06019">SẮP XẾP THEO SỐ LẦN XUẤT HIỆN</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06019/top">462</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">22</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06020">DSA06020</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06020">TÌM KIẾM</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06020/top">722</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">23</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06021">DSA06021</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06021">TÌM KIẾM TRONG DÃY SẮP XẾP VÒNG</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06021/top">483</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">24</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06022">DSA06022</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06022">SỐ NHỎ NHẤT VÀ NHỎ THỨ HAI</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06022/top">685</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">25</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06023">DSA06023</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06023">SẮP XẾP ĐỔI CHỖ TRỰC TIẾP</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06023/top">701</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">26</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06024">DSA06024</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06024">SẮP XẾP CHỌN</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06024/top">758</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">27</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06025">DSA06025</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06025">SẮP XẾP CHÈN</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06025/top">711</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">28</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06026">DSA06026</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06026">SẮP XẾP NỔI BỌT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06026/top">722</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">29</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06027">DSA06027</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06027">SẮP XẾP ĐỔI CHỖ TRỰC TIẾP - LIỆT KÊ NGƯỢC</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06027/top">400</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">30</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06028">DSA06028</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06028">SẮP XẾP CHỌN  - LIỆT KÊ NGƯỢC</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06028/top">397</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">31</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06029">DSA06029</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06029">SẮP XẾP CHÈN - LIỆT KÊ NGƯỢC</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06029/top">365</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">32</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06030">DSA06030</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06030">SẮP XẾP NỔI BỌT - LIỆT KÊ NGƯỢC</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06030/top">366</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">33</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06031">DSA06031</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06031">PHẦN TỬ LỚN NHẤT TRONG DÃY CON</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06031/top">326</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">34</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06032">DSA06032</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06032">BỘ BA SỐ CÓ TỔNG NHỎ HƠN K</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06032/top">169</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">35</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06033">DSA06033</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06033">KHOẢNG CÁCH XA NHẤT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06033/top">114</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">36</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06034">DSA06034</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06034">CẶP SỐ CÓ TỔNG BẰNG K</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06034/top">272</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">37</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06035">DSA06035</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06035">DÃY TAM GIÁC DÀI NHẤT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06035/top">78</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">38</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06036">DSA06036</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06036">BỘ BA SỐ BẰNG K</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06036/top">220</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">39</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06039">DSA06039</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06039">SỐ ĐẦU TIÊN BỊ LẶP</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06039/top">392</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">40</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06040">DSA06040</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06040">GIAO CỦA BA DÃY SỐ</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06040/top">281</a></td>
+                        </tr>
+                                            <tr class="bg--10th">
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">41</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06041">DSA06041</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06041">SỐ XUẤT HIỆN NHIỀU NHẤT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06041/top">350</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">42</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06043">DSA06043</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06043">ĐIỂM CÂN BẰNG</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06043/top">296</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">43</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06046">DSA06046</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06046">CHÊNH LỆCH NHỎ NHẤT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06046/top">381</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">44</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06047">DSA06047</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06047">BỘ BA SỐ PYTAGO</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06047/top">251</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">45</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06048">DSA06048</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06048">SỐ LẦN QUAY VÒNG</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06048/top">202</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">46</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06049">DSA06049</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06049">ĐẾM CẶP</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">1</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06049/top">159</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">47</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06037">DSA06037</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06037">SẮP XẾP ĐOẠN CON</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">2</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06037/top">65</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">48</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06038">DSA06038</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06038">CẶP SỐ</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">2</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06038/top">36</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">49</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06044">DSA06044</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06044">SẮP XẾP CHẴN LẺ</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">2</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06044/top">272</a></td>
+                        </tr>
+                                            <tr>
+                                                        <td class="text--middle"><span class="ques__table__icon">&lt;/&gt;</span></td>
+                                                        <td class="text--middle">50</td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06045">DSA06045</a>
+                            </td>
+                            <td>
+                                <a href="https://code.ptit.edu.vn/student/question/DSA06045">XÂU TỐT</a>
+                            </td>
+                            <td>CÁC MÔ HÌNH THUẬT TOÁN</td>
+                            <td>Sắp xếp - Tìm kiếm</td>
+                            <td class="text--middle">3</td>
+                            <td class="text--middle"><a href="https://code.ptit.edu.vn/student/question/DSA06045/top">7</a></td>
+                        </tr>
+                                        </tbody>
+                </table>
+            </div>
+                <div class="d-flex mx-auto justify-content-center">
+            
+        </div>
+    </div>
+        </div>
+    </div>
+            <div class="chat__icon__wrapper">
+        <div class="chat__icon__noti" id="chat__icon__noti"><span id="chat__icon__noti__number">1</span> </div>
+        <i class="fa fa-comment-o chat__icon" aria-hidden="true" onclick="toggleChat()"></i>
+    </div>
+        </div>
+<div class="chat__panel disappear">
+    <div class="chat__panel__box">
+        <div class="chat__panel__box__head">
+            <select name="channel" id="channel">
+                                                                                                <option value="public">Chat</option>
+                                    <option value="COURSE_INT1306_02_20212">INT1306 - 02</option>
+                                            </select>
+            <button class="closeBtn" onclick="toggleChat()"><i class="fa fa-times"></i></button>
+        </div>
+        <div class="chat__panel__box__body" id="chat__body"><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:52:18</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>a cho e hoi bai 3016 co so 0 thi in ra yes hay no vay</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:53:45</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>mình k bị lỗi tle nữa</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:53:56</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>h nó chuyển qua RTE</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:54:20</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>chac la do so fibo trong mang ong lon hon 10 mu 18</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN285&#39;, &#39;Vũ Minh Hoàng&#39;)">B20DCCN285 (Vũ Minh Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:54:29</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>:)) cái đấy chắc trong đề bài có ghi chứ e , dãy fibo bắt đầu từ 1 hay 0 chắc đề có nói , trong trường hợp đề không nói thì thử 2 th xem , bonus thêm chạy mảng đến tầm 92 hay 93 gì đấy</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:54:43</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>oke anh</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:55:17</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>đề nó k nói mới đau a ạ</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN285&#39;, &#39;Vũ Minh Hoàng&#39;)">B20DCCN285 (Vũ Minh Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:02:16</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ko nói gì thì khả năng cao 0 là NO</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:04:40</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>http://codepad.org/boINjHvU</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:04:48</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>anh xem xem no sai dau cai a</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN285&#39;, &#39;Vũ Minh Hoàng&#39;)">B20DCCN285 (Vũ Minh Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:07:57</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>code em nộp đấy hả ? nếu code đấy thì sai vì đề bảo in ra yes no thôi mà e in ra full mảng fibonanci r</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:08:26</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>af em nham sr anh</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:08:46</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>em in thu xem j chay dc den dau :))</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:15:31</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>móa</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:15:39</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>nãy h nộp nhầm file ạ</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:15:42</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>:))))</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:17:53</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>để em xem phát</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:19:21</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>à</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:19:31</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>do em sai đoạn điều kiện dưới</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:19:38</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>em cảm ơn anh ạ</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT157&#39;, &#39;Nguyễn Văn Quân&#39;)">B21DCAT157 (Nguyễn Văn Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:39:03</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>bài tập lấy ở đâu vậy mn</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:49:21</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>https://paste.ofcode.org/7TXuwseDmsA5yE5qFmTpqd</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:49:41</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>mn giúp mình câu c03061 với  m k biết sai ở đâu cả @@@</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN262&#39;, &#39;Bùi Tuấn Dũng&#39;)">B21DCCN262 (Bùi Tuấn Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:15:55</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>mình tìm ra lỗi của bạn rồi</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN262&#39;, &#39;Bùi Tuấn Dũng&#39;)">B21DCCN262 (Bùi Tuấn Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:16:12</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>cái phần mid bạn để là int mid(long long n)</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN262&#39;, &#39;Bùi Tuấn Dũng&#39;)">B21DCCN262 (Bùi Tuấn Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:17:17</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>nhưng giả sử nhập n 18 chữ số, bớt đi 3 chữ số thì còn tận 15 chữ số, vẫn quá phạm vi của int.</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN262&#39;, &#39;Bùi Tuấn Dũng&#39;)">B21DCCN262 (Bùi Tuấn Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:17:22</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>long long mid(long long n){<br>	return (1ll*n-1ll*first(n)*(long long)pow(10,count(n)-1ll*1)-last(n))/10;
+}</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:19:16</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>à mình hiểu rồi cảm ơn bạn nhiều</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN262&#39;, &#39;Bùi Tuấn Dũng&#39;)">B21DCCN262 (Bùi Tuấn Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:23:01</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>nộp được ko bạn</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN262&#39;, &#39;Bùi Tuấn Dũng&#39;)">B21DCCN262 (Bùi Tuấn Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:25:30</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>thay cho (long long)a  ý bạn</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN262&#39;, &#39;Bùi Tuấn Dũng&#39;)">B21DCCN262 (Bùi Tuấn Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:25:46</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ép kiểu gõ long long hơi dài</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:41:02</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>nó bị ce =)0</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN262&#39;, &#39;Bùi Tuấn Dũng&#39;)">B21DCCN262 (Bùi Tuấn Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:43:06</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>lạ thật</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN262&#39;, &#39;Bùi Tuấn Dũng&#39;)">B21DCCN262 (Bùi Tuấn Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:43:12</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>tôi nộp ac mà :((</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:56:53</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>chịu luôn t nộp nó bị ce mới cay</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:59:25</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>tôi có cảm giác cái web này nó cứ sao sao ấy</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCPT216&#39;, &#39;Trần Thị Thùy Trang&#39;)">B20DCPT216 (Trần Thị Thùy Trang)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">23:09:09</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Phải yên tâm vào web nhà làm nha :^)</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">23:41:11</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>CE thì là do code chứ sao đổ cho web :(</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">23:56:56</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ơ nươc đi này em nhầm mn cho em đi lại ạ =))</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN177&#39;, &#39;Phùng Văn Đạt&#39;)">B20DCCN177 (Phùng Văn Đạt)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">16:55:24</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>mình đang làm bài DSA02010 , kết quả so với test thì đúng nhưng lúp nộp thì bị báo wa . Mọi người kiểm tra giúp mình với ạ. Mình cảm ơn nhiều .</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN177&#39;, &#39;Phùng Văn Đạt&#39;)">B20DCCN177 (Phùng Văn Đạt)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">16:55:39</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>code của mình đây https://ideone.com/13knh5</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN687&#39;, &#39;Nguyễn Huyền Trang&#39;)">B20DCCN687 (Nguyễn Huyền Trang)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">18:01:55</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>2 8 1 9 ô ra sai</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN274&#39;, &#39;Nguyễn Đức Dũng&#39;)">B21DCCN274 (Nguyễn Đức Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">09:53:09</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ai làm bài C03057 chưa ạ, làm mà nó cứ sai hoài :(</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN724&#39;, &#39;Nguyễn Hữu Trinh&#39;)">B21DCCN724 (Nguyễn Hữu Trinh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">11:12:26</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>không dùng pow</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN724&#39;, &#39;Nguyễn Hữu Trinh&#39;)">B21DCCN724 (Nguyễn Hữu Trinh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">11:12:29</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>là được</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN274&#39;, &#39;Nguyễn Đức Dũng&#39;)">B21DCCN274 (Nguyễn Đức Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">11:15:23</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>cho mình xin code với</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN724&#39;, &#39;Nguyễn Hữu Trinh&#39;)">B21DCCN724 (Nguyễn Hữu Trinh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">12:43:39</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>bạn dùng hàm tự khởi tạo 1 hàm mũ khác mà ko dùng cái của thư viện là xong</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN274&#39;, &#39;Nguyễn Đức Dũng&#39;)">B21DCCN274 (Nguyễn Đức Dũng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">13:49:49</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>bài đấy in đáp án ra có gì đặc biệt không thế, mình sợ in ra sai :((</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN394&#39;, &#39;Thái Văn Hoàng&#39;)">B21DCCN394 (Thái Văn Hoàng)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">14:55:47</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ồ cám ơn ông trinh nhá tôi lm đc r</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN546&#39;, &#39;Đỗ Hoàng Quân&#39;)">B20DCCN546 (Đỗ Hoàng Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">15:49:16</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ae xin các thầy làm cái dark mode cho web đi :D,</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN567&#39;, &#39;Nguyễn Đình Mạnh Quỳnh&#39;)">B20DCCN567 (Nguyễn Đình Mạnh Quỳnh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">15:52:37</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>xin thầy làm thêm cái button copy input output như trên codeforces nữa, đỡ p bôi đen hic</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:47:47</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>bro nào làm bài 6036 rồi chỉ toi cách làm với</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:25:48</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Xâu chỉ có 1 ký tự cũng là xâu đối xứng. Mà đề bảo xóa đi nhiều ký tự nhất để xâu thu được là xâu đối xứng =&gt; Xóa hết tất cả đi và chỉ để lại 1 ký tự là được :3</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:33:17</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>mình cũng làm như thế nhưng wa</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:36:36</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Gửi code đi :v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:38:27</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>https://ideone.com/eHHNtK</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:40:44</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>In ra size - 1 chứ :v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:42:03</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>trừ kí tự null nữa chứ nhờ</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:44:04</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Hàm strlen() tính độ dài từ ký tự đầu tiên đến khi gặp ký tự NULL đầu tiên và sẽ không tính ký tự NULL.</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:44:43</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>nó tính cả null đấy bro</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:44:48</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>tôi ac rồi</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:45:02</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>đặt mảng có 1k nên thiếu</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:46:27</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Không tính NULL đâu :v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:47:18</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Thực ra là dùng fgets() nó sẽ đọc '\n' vào xâu khi bạn bấm enter đấy :v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:47:31</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Thử dùng scanf() xem :3</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:52:39</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ok , cảm ơn bro</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN581&#39;, &#39;Nguyễn Phúc Sơn&#39;)">B20DCCN581 (Nguyễn Phúc Sơn)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">11:09:35</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ae cho xin idea sắp xếp chẵn lẻ DSA với :(</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCPT053&#39;, &#39;Nguyễn Quốc Đạt&#39;)">B20DCPT053 (Nguyễn Quốc Đạt)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">11:18:36</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>chỉ số chẵn lưu vào 1 mảng, chỉ số lẻ lưu vào 1 mảng, rồi sắp xếp 2 mảng đó, sau đó in ra. Còn in như nào thì có thể nhìn test case.</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">11:21:58</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>mn kiểm tra bài C04017 xem t sai ở đâu với</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">11:21:59</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>https://ideone.com/u70vpX</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN013&#39;, &#39;Trần Đình Lâm Anh&#39;)">B21DCCN013 (Trần Đình Lâm Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">13:37:06</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Đề bài có nói là mỗi số chỉ in ra 1 lần đâu, làm như vậy là sai rồi :v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN066&#39;, &#39;Ngô Đình Khánh&#39;)">B21DCCN066 (Ngô Đình Khánh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">13:12:27</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>bài C06003 t làm sai ở đâu nhỉ, sao nó ko AC</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN066&#39;, &#39;Ngô Đình Khánh&#39;)">B21DCCN066 (Ngô Đình Khánh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">13:12:29</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>https://ideone.com/tBEM0F</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:46:09</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>hàm strtok mình nghĩ phải là (s, " ") chứ không  phải (s, "\n")</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:46:27</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>kiểu bro làm nó tính kí tự xuống dòng r thì p</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCVT460&#39;, &#39;Hoàng Quốc Việt&#39;)">B21DCVT460 (Hoàng Quốc Việt)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">00:47:00</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>bài pt bậc nhất sao ấy nhỉ</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCVT460&#39;, &#39;Hoàng Quốc Việt&#39;)">B21DCVT460 (Hoàng Quốc Việt)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">00:47:15</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>#include&lt;stdio.h&gt;<br>int main(){
+	float a,b;
+	scanf("%d%d",&amp;a,&amp;b);
+	if(a==0){
+		if(b==0)printf("Vo so nghiem");
+		else printf("Vo nghiem");
+	}
+	if(a!=0)printf("%f",-b/a);
+}</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCVT460&#39;, &#39;Hoàng Quốc Việt&#39;)">B21DCVT460 (Hoàng Quốc Việt)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">00:47:24</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>sao t làm v nó kêu sai:v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN700&#39;, &#39;Nguyễn Xuân Thức&#39;)">B21DCCN700 (Nguyễn Xuân Thức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">01:01:03</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>sai đặc tả kìa =)))</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">01:11:18</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>:v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN700&#39;, &#39;Nguyễn Xuân Thức&#39;)">B21DCCN700 (Nguyễn Xuân Thức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">01:17:12</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>:v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN557&#39;, &#39;Trần Nhật Nam&#39;)">B21DCCN557 (Trần Nhật Nam)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">01:24:16</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>:v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN724&#39;, &#39;Nguyễn Hữu Trinh&#39;)">B21DCCN724 (Nguyễn Hữu Trinh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">06:54:46</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>bài ý nhập 2 số thực mà @Hoàng Quốc Việt</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN714&#39;, &#39;Vũ Huy Trường&#39;)">B20DCCN714 (Vũ Huy Trường)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">17:23:43</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>hello, world 2022</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN554&#39;, &#39;Phạm Hoài Nam&#39;)">B21DCCN554 (Phạm Hoài Nam)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">19:20:35</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>:v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCVT170&#39;, &#39;Trương Trường Giang&#39;)">B21DCVT170 (Trương Trường Giang)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:14:28</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>mọi người cho mình hỏi bài phép toán cơ bản 2 mình làm đúng kết quả nhưng cứ bị WA ấy</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCVT170&#39;, &#39;Trương Trường Giang&#39;)">B21DCVT170 (Trương Trường Giang)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">20:14:31</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>#include &lt;stdio.h&gt;<br>int main()
+{
+	unsigned long a,b;
+	scanf("%d %d",&amp;a,&amp;b);
+	printf("%d \n",a+b);
+	printf("%d \n",a-b);
+	printf("%d \n",a*b);
+	printf("%d \n",a/b);
+	printf("%d \n",a%b);
+	float t=(float)a/b;
+	printf("%.2f",t);
+	return 0;
+}</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN234&#39;, &#39;Cao Hồng Đức&#39;)">B21DCCN234 (Cao Hồng Đức)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">21:23:06</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>%lld,(long long) a*b xem đc k</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCVT170&#39;, &#39;Trương Trường Giang&#39;)">B21DCVT170 (Trương Trường Giang)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:10:15</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ôi được thật r này :(</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCVT170&#39;, &#39;Trương Trường Giang&#39;)">B21DCVT170 (Trương Trường Giang)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">22:18:13</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>cảm ơn bạn nhé :v</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT203&#39;, &#39;Bùi Thức Tuấn&#39;)">B21DCAT203 (Bùi Thức Tuấn)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">16:02:30</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Bài c03057 tổng nhỏ nhất và lớn nhất nó có lừa gì không mn:( không phải cứ chuyển 6 về 5 và 5 về 6 là được à</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN724&#39;, &#39;Nguyễn Hữu Trinh&#39;)">B21DCCN724 (Nguyễn Hữu Trinh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">16:20:43</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>chỉ cần chuyển thôi</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT203&#39;, &#39;Bùi Thức Tuấn&#39;)">B21DCAT203 (Bùi Thức Tuấn)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">16:24:55</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ảo thật đấy</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCCN724&#39;, &#39;Nguyễn Hữu Trinh&#39;)">B21DCCN724 (Nguyễn Hữu Trinh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">16:33:13</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>bị WA đúng ko</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT203&#39;, &#39;Bùi Thức Tuấn&#39;)">B21DCAT203 (Bùi Thức Tuấn)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">16:36:18</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>ukm</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B20DCCN550&#39;, &#39;Nguyễn Mạnh Quân&#39;)">B20DCCN550 (Nguyễn Mạnh Quân)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">18:13:26</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>Bài đó đọc input dưới dạng xâu ký tự là dễ nhất :3</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">19:05:07</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>bài đấy toi cũng wa hòa:&gt;</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">11:50:51</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>các quý nhân check bài 6047 sai ở đâu với</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">11:50:53</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>https://ideone.com/dpdM7r</p>
+                </div>
+            </div><div class="chat__message">
+                <div class="chat__message__inf">
+                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(&#39;B21DCAT027&#39;, &#39;Lê Sỹ Hoàng Anh&#39;)">B21DCAT027 (Lê Sỹ Hoàng Anh)</span> to <span class="chat__message__inf__actor" onclick="sendTo(null)">Everyone</span>:</p>
+                    <p class="chat__message__inf__time">15:06:29</p>
+                </div>
+                <div class="chat__message__cont">
+                    <p>AC rồi anh</p>
+                </div>
+            </div></div>
+    </div>
+
+    <div class="chat__panel__input">
+        <form action="https://code.ptit.edu.vn/student/question">
+            <div class="chat__panel__input__head">
+                <div class="chat__panel__input__head__info">
+                    <label for="to">To </label>
+                    <select name="to" id="rec">
+                        <option value="">Everyone</option>
+                    </select>
+                </div>
+            </div>
+            <textarea name="" id="msg" cols="30" rows="3.5" placeholder="Type message here..."></textarea>
+        </form>
+    </div>
+</div>
+<script>
+    function toggleMenu(){
+        $('.nav__profile__menu').toggleClass('appear').toggleClass('disappear');
+    }
+    function close_popup(){
+        $('.main__user__welcome').addClass('disappear');
+    }
+    function customSelect(className){
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /* Look for any elements with the class "custom-select": */
+        x = document.getElementsByClassName(className);
+        l = x.length;
+        for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+            /* For each element, create a new DIV that will act as the selected item: */
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            let name = '';
+            if (selElmnt.options[selElmnt.selectedIndex] !== undefined) {
+                name = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            }
+            let limit;
+            if(className == "select__lang"){
+                limit = 10;
+            }else if(className == "select__subject"){
+                limit = 35;
+            }else if(className == "select__group"){
+                limit = 7;
+            }else if(className == "select__term"){
+                limit = 18;
+            }
+            if(name.length > limit){
+                name = name.substring(0, limit) + "...";
+            }
+            a.innerHTML = name;
+            x[i].appendChild(a);
+            /* For each element, create a new DIV that will contain the option list: */
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 0; j < ll; j++) {
+                /* For each option in the original select element,
+                create a new DIV that will act as an option item: */
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                if(j != selElmnt.selectedIndex){
+
+                    c.addEventListener("click", function(e) {
+                        /* When an item is clicked, update the original select box,
+                        and the selected item: */
+                        var y, i, k, s, h, sl, yl;
+                        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                        sl = s.length;
+                        h = this.parentNode.previousSibling;
+                        for (i = 0; i < sl; i++) {
+                            if (s.options[i].innerHTML == this.innerHTML) {
+                                s.selectedIndex = i;
+                                h.innerHTML = this.innerHTML;
+                                y = this.parentNode.getElementsByClassName("same-as-selected");
+                                yl = y.length;
+                                for (k = 0; k < yl; k++) {
+                                    y[k].removeAttribute("class");
+                                }
+                                this.setAttribute("class", "same-as-selected");
+                                break;
+                            }
+                        }
+                        if(className == "select__lang"){
+                            if (document.getElementById('editor')) {
+                                if(h.innerHTML == 'C/C++'){
+                                    var editor = ace.edit("editor");
+                                    editor.session.setMode("ace/mode/c_cpp");
+                                } else if(h.innerHTML == 'Java'){
+                                    var editor = ace.edit("editor");
+                                    editor.session.setMode("ace/mode/java");
+                                } else{
+                                    var editor = ace.edit("editor");
+                                    editor.session.setMode("ace/mode/python");
+                                }
+                            }
+                        }else if(className == "select__subject"){
+                            let len = selElmnt.length;
+                            for(let i = 0; i < len; i++){
+                                if(h.innerHTML == selElmnt.options[i].innerHTML){
+                                    if (!selElmnt.options[i].disabled) {
+                                        window.location = '?' + selElmnt.name + '=' + selElmnt.options[i].value;
+                                        break;
+                                    }
+                                }
+                            }
+                        }else if(className == "select__group"){
+                            let len = selElmnt.length;
+                            for(let i = 0; i < len; i++){
+                                if(h.innerHTML == selElmnt.options[i].innerHTML) {
+                                    if (!selElmnt.options[i].disabled) {
+                                        window.location = '?semester=' + selElmnt.options[selElmnt.selectedIndex].getAttribute('data-semester') + '&' + selElmnt.name + '=' + selElmnt.options[i].value;
+                                        break;
+                                    }
+                                }
+                            }
+                        }else if(className == "select__term"){
+                            let len = selElmnt.length;
+                            for(let i = 0; i < len; i++){
+                                if(h.innerHTML == selElmnt.options[i].innerHTML) {
+                                    if (!selElmnt.options[i].disabled) {
+                                        window.location = '?' + selElmnt.name + '=' + selElmnt.options[i].value;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        h.click();
+                    });
+                }
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function(e) {
+                /* When the select box is clicked, close any other select boxes,
+                and open/close the current select box: */
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+
+    }
+
+    customSelect('select__lang');
+    customSelect('select__subject');
+    customSelect('select__group');
+    customSelect('select__term');
+
+    function closeAllSelect(elmnt) {
+        /* A function that will close all select boxes in the document,
+        except the current select box: */
+        var x, y, z, i, xl, yl, zl, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        xl = x.length;
+        yl = y.length;
+        for (i = 0; i < yl; i++) {
+            if (elmnt == y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < xl; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+
+    /* If the user clicks anywhere outside the select box,
+    then close all select boxes: */
+    document.addEventListener("click", closeAllSelect);
+    function popup_disappear(a){
+        let input = document.getElementsByClassName(a);
+        $(`.${a}`).addClass('disappear');
+    }
+    function toggleMenu(str){
+        if($('.' + str).data('clicked')){
+            $('.' + str).data('clicked', false);
+        }else{
+            $('.' + str).data('clicked', true);
+        }
+    }
+        $("body").click(function(){
+            var z = document.getElementsByClassName("nav__profile__menu");
+            var zl = z.length;
+            for (let i = 0; i < zl; i++) {
+                for(let j = 0; j < z[i].classList.length; j++){
+                    let str = z[i].classList.item(j);
+                    if(str.includes('dropdown')){
+                        if($('.' + str).data('clicked')){
+                            z[i].classList.toggle('appear');
+                            z[i].classList.toggle('disappear');
+                            $('.' + str).data('clicked', false);
+                            break;
+                        }else{
+                            z[i].classList.toggle('appear', false);
+                            z[i].classList.toggle('disappear', true);
+                        }
+                    }
+                }
+            }
+        });
+    function input_active(a){
+        let input = document.getElementById(a);
+        if(input.value !== ""){
+            $(`#${a}`).addClass('setting__input--active');
+        }else{
+            $(`#${a}`).removeClass('setting__input--active');
+        }
+    }
+
+    var loadFile = function(event) {
+        var image = document.getElementById('loadFileImg');
+        image.src = URL.createObjectURL(event.target.files[0]);
+        var fileReader = new FileReader();
+        fileReader.onload = function(fileLoadedEvent) {
+            var srcData = fileLoadedEvent.target.result;
+        };
+        fileReader.readAsDataURL(event.target.files[0]);
+    };
+
+    </script>
+<script src="./SapXepTimKiem_files/socket.io.js.tải xuống"></script>
+<script>
+    function open_chat_popup() {
+        let icon_wrapper = document.querySelector('.chat__icon__wrapper');
+        let panel = document.getElementsByClassName("chat__panel")[0];
+        $(".chat__icon").removeClass('fa-comment-o').addClass('fa-comment');
+        panel.classList.remove('disappear');
+        panel.style.right = "0vw";
+        panel.style.boxShadow = "-2px 2px 2px 2px rgba(0, 0, 0, 0.1)";
+        var elem = document.getElementById('chat__body');
+        elem.scrollTop = elem.scrollHeight;
+        new_message = 0;
+        chat_open = true;
+        localStorage.setItem("show_chat_popup", 1);
+        $('#chat__icon__noti').hide();
+    }
+
+    function close_chat_popup() {
+        let icon_wrapper = document.querySelector('.chat__icon__wrapper');
+        let panel = document.getElementsByClassName("chat__panel")[0];
+        $(".chat__icon").removeClass('fa-comment').addClass('fa-comment-o');
+        icon_wrapper.style.right = "2.5vw";
+        panel.style.right = "-30vw";
+        panel.style.boxShadow = "";
+        panel.classList.add('disappear');
+        chat_open = false;
+        localStorage.setItem("show_chat_popup", 0);
+    }
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var chat_channel = localStorage.getItem('chat_channel') || 'public';
+
+    var channel_select = document.getElementById('channel');
+    var channel_opts = channel_select.options;
+    var chat_channel_option = [];
+    for (i = 0; i < channel_opts.length; i++) {
+        chat_channel_option.push(channel_opts[i].value);
+        if (channel_opts[i].value == chat_channel) {
+            channel_select.selectedIndex = i;
+        }
+    }
+
+    if (!chat_channel_option.includes(chat_channel)) {
+        chat_channel = chat_channel_option[0];
+    }
+    localStorage.setItem('chat_channel', chat_channel);
+
+    function update_message(data) {
+        $('#chat__body').empty();
+        data.messages.forEach(function(json_msg) {
+            html_node = '<div class="chat__message">\n' +
+                '                <div class="chat__message__inf">\n' +
+                '                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(\'' + json_msg.user.username + '\', \'' + json_msg.user.full_name + '\')">' + json_msg.user.username + ' (' + json_msg.user.full_name + ')</span> to <span class="chat__message__inf__actor" onclick="sendTo(' + (json_msg.dest_user.username != null ? '\'' + json_msg.dest_user.username +'\'' : null) + ')">' + ((json_msg.dest_user.username != null) ? (json_msg.dest_user.username + '(' + json_msg.dest_user.full_name + ')') : json_msg.dest_user.full_name) + '</span>:</p>\n' +
+                '                    <p class="chat__message__inf__time">' + json_msg.time + '</p>\n' +
+                '                </div>\n' +
+                '                <div class="chat__message__cont">\n' +
+                '                    <p>' + json_msg.message.replace("\n", '<br />') + '</p>\n' +
+                '                </div>\n' +
+                '            </div>';
+            $('#chat__body').append(html_node);
+        });
+        $("#chat__body").scrollTop(function() { return this.scrollHeight; });
+    }
+    $('#channel').change(function() {
+        chat_channel = $(this).val();
+        $.ajax({
+            type: "POST",
+            url: '/chat_channel',
+            dataType: "json",
+            data: {'channel': $(this).val()},
+            success: function (data) {
+                localStorage.setItem('chat_channel', chat_channel);
+                update_message(data);
+            }
+        });
+    });
+    var new_message = 1;
+    var chat_open = false;
+    var show_chat_popup = localStorage.getItem('show_chat_popup') || 0;
+    if (show_chat_popup == 1) {
+        let icon = document.querySelector('.chat__icon');
+        if(icon.classList.contains('fa-comment-o')){
+            open_chat_popup();
+        }
+    }
+
+    let toggleChat = () => {
+        let icon = document.querySelector('.chat__icon');
+        if(icon.classList.contains('fa-comment-o')){
+            open_chat_popup();
+        }else{
+            close_chat_popup();
+        }
+    };
+
+    var socket = io('https://107.zcode.edu.vn:8888');
+    socket.on('connect', function() {
+        $.ajax({
+            type: "POST",
+            url: '/chat_auth',
+            dataType: "json",
+            data: {'socket_id': socket.id, 'channel': chat_channel},
+            success:function(data){
+                $(".msg").val('');
+                update_message(data);
+            }
+        });
+    });
+    socket.on('chat message', function(msg) {
+        json_msg = msg;
+        html_node = '<div class="chat__message">\n' +
+            '                <div class="chat__message__inf">\n' +
+            '                    <p class="chat__message__inf__name">From <span class="chat__message__inf__actor" onclick="sendTo(\'' + json_msg.user.username + '\', \'' + json_msg.user.full_name + '\')">' + json_msg.user.username + ' (' + json_msg.user.full_name + ')</span> to <span class="chat__message__inf__actor" onclick="sendTo(' + (json_msg.dest_user.username != null ? '\'' + json_msg.dest_user.username +'\'' : null) + ')">' + ((json_msg.dest_user.username != null) ? (json_msg.dest_user.username + '(' + json_msg.dest_user.full_name + ')') : json_msg.dest_user.full_name) + '</span>:</p>\n' +
+            '                    <p class="chat__message__inf__time">' + json_msg.time + '</p>\n' +
+            '                </div>\n' +
+            '                <div class="chat__message__cont">\n' +
+            '                    <p>' + json_msg.message.replace("\n", '<br />') + '</p>\n' +
+            '                </div>\n' +
+            '            </div>';
+        $('#chat__body').append(html_node);
+        $("#chat__body").scrollTop(function() { return this.scrollHeight; });
+        if (!chat_open) {
+            new_message++;
+            $('#chat__icon__noti__number').html(new_message);
+            $('#chat__icon__noti').show();
+        }
+    });
+    socket.on('change_channel', function(msg) {
+        chat_channel = msg;
+        $('#channel').val(chat_channel);
+        $.ajax({
+            type: "POST",
+            url: '/chat_message',
+            dataType: "json",
+            data: {'channel': chat_channel},
+            success: function (data) {
+                update_message(data);
+            }
+        });
+    });
+    $(function() {
+        $("#msg").keypress(function (e) {
+            if(e.which === 13) {
+                chat_channel = localStorage.getItem('chat_channel');
+                dest_username = $('#rec').val();
+                $.ajax({
+                    type: "POST",
+                    url: '/chat',
+                    dataType: "json",
+                    data: {'message': $(this).val(), 'username': dest_username, 'channel': chat_channel},
+                    success:function(data){
+                        $(".msg").val('');
+                    }
+                });
+                $(this).val("");
+                e.preventDefault();
+            }
+        });
+    });
+
+    let sendTo = function(username, full_name){
+        var rec = document.getElementById('rec');
+        if (username == null) {
+            rec.selectedIndex = 0;
+            return;
+        }
+        var opts = rec.options;
+        old_option = false;
+        for (var opt, j = 0; opt = opts[j]; j++) {
+            if (opt.value == username) {
+                rec.selectedIndex = j;
+                old_option = true;
+                break;
+            }
+        }
+        if (!old_option) {
+            new_option = document.createElement('option');
+            new_option.value = username;
+            if (typeof new_option.textContent === 'undefined')
+            {
+                new_option.innerText = username + ' (' + full_name + ')';
+            }
+            else
+            {
+                new_option.textContent = username + ' (' + full_name + ')';
+            }
+            rec.appendChild(new_option);
+            rec.selectedIndex = rec.options.length - 1;
+        }
+    }
+
+</script>
+<script type="text/javascript">
+    //some default pre init
+    var Tracker = Tracker || {};
+    Tracker.q = Tracker.q || [];
+
+    //provide tracker initialization parameters
+    Tracker.app_key = 'd6a385da4018e11641f2d4d3c11297c1ab433ad9';
+    Tracker.url = 'https://7997.zcode.vn';
+
+    Tracker.q.push(['track_sessions']);
+    Tracker.q.push(['track_pageview']);
+    Tracker.q.push(['track_clicks']);
+    Tracker.q.push(['track_scrolls']);
+    Tracker.q.push(['track_errors']);
+    Tracker.q.push(['track_links']);
+    Tracker.q.push(['track_forms']);
+    Tracker.q.push(['collect_from_forms']);
+
+    //load tracker script asynchronously
+    (function() {
+        var cly = document.createElement('script'); cly.type = 'text/javascript';
+        cly.async = true;
+        //enter url of script here
+        cly.src = 'https://7997.zcode.vn/sdk/web/tracker.min.js';
+        cly.onload = function(){Tracker.init()};
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+    })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function clickMenu() {
+        var x = document.getElementById("nav__profile");
+        if (x.className === "nav__profile") {
+            x.className += " show";
+        } else {
+            x.className = "nav__profile";
+        }
+    }
+</script>
+    
+
+</body></html>
