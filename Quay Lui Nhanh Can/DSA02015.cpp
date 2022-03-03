@@ -37,40 +37,45 @@ void FileIO(){
 // -------------------  Your code STARTS here !!!---------------------------
 
 vector<string> res;
-bool ktra(string s) {
+
+bool check(string s) {
 	int x = 0, y = 0;
 	for (int i = 0; i < s.length(); i++) {
 		if (s[i] == '(') {
 			x++;
 			y++;
 		}
-		if (s[i] == ')')x--;
-		if (x < 0)return false;
+		if (s[i] == ')') x--;
+		if (x < 0)
+			return false;
 	}
-	if (y == 0&&s.length()==1)return false;
+	if (y == 0 && s.length() == 1)
+		return false;
 	return x == 0;
 }
+
 void BFS(string s) {
-	if (!s.length())return;
-	unordered_set<string> A;
-	queue<string> B;
-	A.insert(s);
-	B.push(s);
+	if (!s.length()) return;
+	unordered_set<string> u;
+	queue<string> q;
+	u.insert(s);
+	q.push(s);
 	bool ok = false;
-	while (B.size()) {
-		string s = B.front();
-		B.pop();
-		if (ktra(s)&&s!="") {
+	while(!q.empty()) {
+		string s = q.front();
+		q.pop();
+		if (check(s)) {
 			res.push_back(s);
 			ok = true;
 		}
-		if (ok)continue;
-		for (int i = 0; i < s.length(); i++) {
+		if(ok) 
+			continue;
+		for(int i = 0; i < s.size(); i++) {
 			if (s[i] == '(' || s[i] == ')') {
-				string a = s.substr(0, i) + s.substr(i + 1, s.length());
-				if (A.find(a) == A.end()) {
-					A.insert(a);
-					B.push(a);
+				string tp = s.substr(0, i) + s.substr(i + 1, s.length());
+				if (u.find(tp) == u.end()) {
+					u.insert(tp);
+					q.push(tp);
 				}
 			}
 
@@ -88,10 +93,12 @@ int main() {
 		res.clear();
 		string s; cin >> s;
 		BFS(s);
-		if (res.size() == 0)cout << -1;
+		if (!res.size())
+			cout << -1;
 		else {
 			sort(res.begin(), res.end());
-			for (auto s : res)cout << s << " ";
+			for (auto s : res)
+				cout << s << " ";
 		}
 		cout << endl;
 	}
