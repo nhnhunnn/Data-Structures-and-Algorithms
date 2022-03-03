@@ -64,7 +64,7 @@ void BFS(string s) {
 	while(!q.empty()) {
 		string s = q.front();
 		q.pop();
-		if (check(s)) {
+		if (check(s) && s != "") {
 			res.push_back(s);
 			ok = true;
 		}
