@@ -59,9 +59,7 @@ void Solve(){
 		if(a[i] == 0) s[i - 1] = '0';
 		else s[i - 1] = '2';
 	}
-	string t = s; 
-	reverse(t.begin(), t.end());
-	if(check(s) && t == s){
+	if(check(s)){
 		string m = s;
 		m.insert(2, "/");
 		m.insert(5, "/");
