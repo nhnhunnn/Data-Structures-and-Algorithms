@@ -54,7 +54,7 @@ void solve(){
 
 bool check(){
 	for(int i = 1; i < k; i ++){
-		if(c[i] > c[i + 1])
+		if(a[c[i]] > a[c[i + 1]])
 			return false;
 	}
 	return true;
