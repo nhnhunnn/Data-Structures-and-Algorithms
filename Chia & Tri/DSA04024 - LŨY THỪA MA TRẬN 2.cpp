@@ -75,7 +75,7 @@ void Solve(){
 	a = Power(a, k);
 	ll sum = 0;
 	for(int i = 0; i < n; i ++){
-		sum = sum + a[i][n - 1] % mod;
+		sum = sum + a.x[i][n - 1] % mod;
 		sum %= mod;
 	}
 	cout << sum << endl;
