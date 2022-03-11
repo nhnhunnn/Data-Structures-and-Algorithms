@@ -33,130 +33,44 @@ void FileIO(){
 // ID: B20DCPT053
 // Organization: PTIT
 // Date: 18/02/22 14:51
-// Program: Chia deu
+// Program: Bieu thuc toan hoc
 // -------------------  Your code STARTS here !!!---------------------------
 
-int a, b, c, d, e;
-int per[10], x[10], y[10];
-int res;
+int num[10], res;
 bool visited[100];
 
-void init(){
-	cin >> a >> b >> c >> d >> e;
-	memset(visited, false, sizeof(visited));
-	res = 0;
-}
-
-bool Solve(){
-	int ans = 0;
-	switch(y[1]){
-		case 1:{
-			ans = per[1] + per[2];
-			break;
-		}
-		case 2:{
-			ans = per[1] - per[2];
-			break;
-		}
-		case 3:{
-			ans = per[1] * per[2];
-			break;
-		}
-	}
-	for(int i = 2; i <= 4; i ++){
-		switch(y[i]){
-			case 1:{
-				ans += per[i + 1];
-				break;
-			}
-			case 2:{
-				ans -= per[i + 1];
-				break;
-			}
-			case 3:{
-				ans *= per[i + 1];
-				break;
-			}
-		}
-	}
-	return ans == 23;
-}
-
-
-void make_per(){
-	for(int i = 1; i <= 5; i ++){
-		switch(x[i]){
-			case 1: {
-	            per[i] = a;
-	            break;
-	        }
-	        case 2: {
-	            per[i] = b;
-	            break;
-	        }
-	        case 3: {
-	            per[i] = c;
-	            break;
-	        }
-	        case 4: {
-	            per[i] = d;
-	            break;
-	        }
-	        case 5: {
-	            per[i] = e;
-	            break;
-	        }
+void Try(int i, int x){
+    if(res) return;
+    if(i == 5 && x == 23){
+        res = 1;
+        return;
+    }
+    for(int j = 0; j < 5; ++j){
+        if(!visited[j]){
+            visited[j] = true;
+            Try(i + 1, x + num[j]);
+            Try(i + 1, x - num[j]);
+            Try(i + 1, x * num[j]);
+            visited[j] = false;
         }
-	}
+    }
 }
-
-void Try_with_expr(int j){
-	if(res > 0)
-		return;
-	for(int i = 1; i <= 3; i ++){
-		y[j] = i;
-		if(j == 4){
-			if(Solve())
-				res++;
-			if(res > 0)
-				return;
-		} 
-		else Try_with_expr(j + 1);
-	}
-}
-
-void Try_with_per(int i){
-	if(res > 0)
-		return;
-	for(int j = 1; j <= 5; j ++){
-		if(!visited[j]){
-			visited[j] = true;
-			x[i] = j;
-			if(i == 5){
-				make_per();
-				Try_with_expr(1);
-			}
-			else 
-				Try_with_per(i + 1);
-			visited[j] = false;
-		}
-	}
-}
-
-
 int main(){
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
-	cout.tie(NULL);
-
+	ios_base::sync_with_stdio(0);
+    cin.tie(NULL);
+    cout.tie(NULL);
 	int t; cin >> t;
 	while(t--){
-		init();
-		Try_with_per(1);
-		if(res > 0) 
-			cout << "YES";
-		else 
-			cout << "NO";
+	    memset(visited, false, sizeof(visited));
+		for(int i = 0; i < 5; i ++) cin >> num[i];
+		res = 0;
+		for(int i = 0; i < 5; i ++){
+		    visited[i] = true;
+		    Try(1, num[i]);
+		    visited[i] = false;
+		}
+		if(res) cout << "YES";
+		else cout << "NO";
 		cout << endl;
 	}
 	return 0;
