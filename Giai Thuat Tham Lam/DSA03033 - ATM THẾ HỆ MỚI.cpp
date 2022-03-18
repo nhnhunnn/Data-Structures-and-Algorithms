@@ -34,7 +34,7 @@ void FileIO(){
 // ID: B20DCPT053
 // Organization: PTIT
 // Date: 14/03/22 21:56
-// Program: Sap xep vien bi
+// Program: ATM the he moi
 // -------------------  Your code STARTS here !!!---------------------------
 
 ll power(ll a, ll b){
