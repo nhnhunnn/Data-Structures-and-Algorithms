@@ -6,7 +6,7 @@ int main(){
 		string str; cin >> str;
 		stack<string> stk;
 		int n = str.length();
-		for(int i = n - 1; i >= 0; i --){
+		for(int i = 0; i < n; i++){
 			if(str[i] == '+' ||str[i] == '-' ||str[i] == '*' ||str[i] == '/' || str[i] == '^' || str[i] == '%'){
 				string s1 = stk.top();
 				stk.pop();
