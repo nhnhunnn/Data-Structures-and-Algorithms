@@ -25,5 +25,6 @@ int main(){
             }
         }
     }
+	while(dp[n][m][k] < 0) dp[n][m][k] += mod;
     cout << dp[n][m][k] << endl;
 }
