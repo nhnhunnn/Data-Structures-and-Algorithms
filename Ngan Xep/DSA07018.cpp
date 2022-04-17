@@ -1,0 +1,88 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+typedef unsigned long long ull;
+typedef long double ld;
+typedef pair<int, int> p;
+typedef vector<vector<int> > vt;
+typedef vector<pair<int, int> > vp;
+
+const ll mod = 1e9 + 7;
+const int oo = 1e6 + 7;
+
+#define f first
+#define s second
+#define pb push_back
+#define ep emplace_back
+#define sz(a) (int) a.size()
+#define ms(s, n) memset(s, n, sizeof(s))
+#define present(t, x) (t.find(x) != t.end())
+#define all(a) (a.begin(), a.end())
+#define For(i, l, r) for (int i = l; i <= r; i++)
+#define Fod(i, r, l) for (int i = r; i >= l; i--)
+#define fillchar(a, x) memset(a, x, sizeof (a))
+#define faster ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+
+void FileIO(){
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+}
+
+// Author: Nguyen Quoc Dat
+// ID: B20DCPT053
+// Organization: PTIT
+// Date: 22/03/22 09:45
+// Program: Tong Da thuc
+// -------------------  Your code STARTS here !!!---------------------------
+
+vector<int> expr;
+int mx, mn, idx, fact, sum;
+
+void substract(){
+    sum = 0;
+    string s; getline(cin, s);
+    int n = s.size();
+    for(int i = 0; i < n; ++i){
+        if(isdigit(s[i])){
+            sum = sum * 10 + s[i] - '0';
+            if(i == n - 1) 
+                expr[sum] += fact;
+        }
+        else{
+            if(s[i] == '*'){
+                fact = sum;
+                sum = 0;
+            }
+            if(s[i] == '+'){
+                idx = sum;
+                mx = max(idx, mx);
+                sum = 0;
+                expr[idx] += fact;
+            }
+        }
+    }
+}
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    int t; cin >> t;
+    cin.ignore();
+    while (t--) {
+        expr.clear();
+        expr.resize(10000, 0);
+        mx = 0;
+        substract(); substract();
+        for(int i = 0; i <= mx; ++i)
+            if(expr[i]){ mn = i; break;}
+        for(int i = mx; i > mn; --i)
+            if(expr[i]) 
+                cout << expr[i] << "*x^" << i << " + ";
+        cout << expr[mn] << "*x^" << mn << endl;
+    }
+    return 0;
+}
