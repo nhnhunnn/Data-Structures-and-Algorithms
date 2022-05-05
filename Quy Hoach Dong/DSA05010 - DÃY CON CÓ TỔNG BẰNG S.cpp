@@ -46,37 +46,16 @@ int main(){
 	int t; cin >> t;
 	while(t--){
 		int n, k; cin >> n >> k;
-		vector<int> a;
-		int sum = 0;
-		for(int i = 0; i < n; i ++){
+		int dp[1005][1005];
+		dp[0][0] = 0;
+		for(int i = 1; i <= n; i++) dp[0][i] = -1e9;
+		for(int i = 1; i <= n; i++) {
 			int x; cin >> x;
 			x %= k;
-			if(x){
-				a.push_back(x);
-				sum += x;
-				sum %= k;
-			}
+			for(int j = 0; j < k; j++)
+				dp[i][j] = max(dp[i - 1][j], dp[i - 1][(j + k - x) % k] + 1);
 		}
-		if(a.size() < 2)
-			cout << n - a.size();
-		
-		else{
-			int l = a.size();
-			f.clear();
-			f.resize(l + 1);
-			for(int i = 0; i < l + 1; i ++) f[i].resize(k, k);
-			f[0][0] = 0;
-			for(int i = 1; i <= l; i ++){
-				for(int j = 0; j < k; j ++){
-					if(j - a[i - 1] >= 0)
-						f[i][j] = min(f[i - 1][j], f[i - 1][j - a[i - 1]] + 1);
-					else
-						f[i][j] = min(f[i - 1][j], f[i - 1][k - j + a[i - 1]] + 1);
-				}
-			}
-			cout << n - f[l][sum] << endl;
-		}
-		cout << endl;
+		cout << dp[n][0] << endl;
 	}
 	return 0;
 }
