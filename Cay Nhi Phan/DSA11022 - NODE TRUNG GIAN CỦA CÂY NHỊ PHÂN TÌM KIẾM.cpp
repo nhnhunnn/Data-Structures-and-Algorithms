@@ -34,7 +34,7 @@ void FileIO(){
 // ID: B20DCPT053
 // Organization: PTIT
 // Date: 07/03/22 10:30
-// Program: Xay dung lai cay nhi phan tim kiem
+// Program: NODE TRUNG GIAN CỦA CÂY NHỊ PHÂN TÌM KIẾM 
 // -------------------  Your code STARTS here !!!---------------------------
 
 typedef struct node{
