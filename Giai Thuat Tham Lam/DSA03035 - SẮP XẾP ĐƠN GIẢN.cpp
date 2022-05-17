@@ -41,8 +41,8 @@ int main(){
 	cout.tie(NULL);
 
 	int n; cin >> n;
-	int a[n + 5], b[n + 5];
-	int m = 0;
+	int a[n], b[n + 1] = {0};
+	int m = -1;
 	for (int i = 0; i < n; i ++){
 		cin >> a[i];
 		b[a[i]] = b[a[i] - 1] + 1;
