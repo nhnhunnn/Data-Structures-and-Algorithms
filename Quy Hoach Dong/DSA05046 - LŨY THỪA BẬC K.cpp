@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
- 
+// CODEFORCES
 #define forn(i, n) for (int i = 0; i < int(n); i++)
 #define ford(i, n) for (int i = int(n) - 1; i >= 0; i--)
 #define fore(i, l, r) for (int i = int(l); i < int(r); i++)
@@ -13,7 +13,7 @@
  
 using namespace std;
  
-typedef long long li;
+typedef long long ll;
 typedef long double ld;
 typedef pair<int, int> pt;
  
@@ -21,10 +21,10 @@ template<typename X> inline X abs(const X& a) { return a < 0? -a: a; }
 template<typename X> inline X sqr(const X& a) { return a * a; }
  
 const int INF = int(1e9);
-const li INF64 = li(1e18);
+const ll INF64 = ll(1e18);
 const ld EPS = 1e-9, PI = 3.1415926535897932384626433832795;
  
-int n, k;
+ll n, k;
  
 inline bool read() {
     return !!(cin >> n >> k);
@@ -32,36 +32,36 @@ inline bool read() {
  
 const int mod = 1000 * 1000 * 1000 + 7;
  
-int gcd(int a, int b, int& x, int& y) {
+ll gcd(ll a, ll b, ll& x, ll& y) {
     if (!a) {
         x = 0, y = 1;
         return b;
     }
-    int xx, yy, g = gcd(b % a, a, xx, yy);
+    ll xx, yy, g = gcd(b % a, a, xx, yy);
     x = yy - b / a * xx;
     y = xx;
     return g;
 }
  
-inline int normal(int n) {
+inline ll normal(ll n) {
     n %= mod;
     (n < 0) && (n += mod);
     return n;
 }
  
-inline int inv(int a) {
-    int x, y;
+inline ll inv(int a) {
+    ll x, y;
     assert(gcd(a, mod, x, y) == 1);
     return normal(x);
 }
  
-inline int add(int a, int b) { return a + b >= mod ? a + b - mod : a + b; }
-inline int sub(int a, int b) { return a - b < 0 ? a - b + mod : a - b; }
-inline int mul(int a, int b) { return int(a * 1ll * b % mod); }
-inline int _div(int a, int b) { return mul(a, inv(b)); }
+inline ll add(ll a, ll b) { return a + b >= mod ? a + b - mod : a + b; }
+inline ll sub(ll a, ll b) { return a - b < 0 ? a - b + mod : a - b; }
+inline ll mul(ll a, ll b) { return int(a * 1ll * b % mod); }
+inline ll _div(ll a, ll b) { return mul(a, inv(b)); }
  
-inline int binPow(int a, int b) {
-    int ans = 1;
+inline ll binPow(ll a, ll b) {
+    ll ans = 1;
     while (b) {
         if (b & 1) ans = mul(ans, a);
         a = mul(a, a);
@@ -70,9 +70,9 @@ inline int binPow(int a, int b) {
     return ans;
 }
  
-int calc(const vector<int>& y, int x) {
-    int ans = 0;
-    int k = 1;
+ll calc(const vector<ll>& y, ll x) {
+    ll ans = 0;
+    ll k = 1;
     fore(j, 1, sz(y)) {
         k = mul(k, normal(x - j));
         k = _div(k, normal(0 - j));
@@ -86,9 +86,9 @@ int calc(const vector<int>& y, int x) {
     return ans;
 }
  
-inline int solve() {
-    vector<int> y;
-    int sum = 0;
+inline ll solve() {
+    vector<ll> y;
+    ll sum = 0;
     y.pb(sum);
     forn(i, k + 1) {
         sum = add(sum, binPow(i + 1, k));
@@ -99,15 +99,9 @@ inline int solve() {
 }
  
 int main() {
-#ifdef SU1
-    assert(freopen("input.txt", "rt", stdin));
-    //assert(freopen("output.txt", "wt", stdout));
-#endif
-    
-    cout << setprecision(10) << fixed;
-    cerr << setprecision(5) << fixed;
- 
-    while (read()) {
+    int t; cin >> t;
+    while (t--) {
+        cin >> n >> k;
         cout << solve() << endl;
     }
     
